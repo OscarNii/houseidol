@@ -66,42 +66,35 @@ class PageView1 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                    child: Center(
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
+                    child: Container(
+                      width: 200,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color:
+                            const Color.fromARGB(41, 255, 255, 255).withOpacity(
+                          (0.1),
+                        ),
+                        borderRadius: BorderRadius.circular(26),
+                        border: Border.all(
+                            width: 4,
+                            color: const Color.fromARGB(255, 230, 220, 220)),
+                      ),
+                      child: Center(
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const MyHomePage()));
-                        },
-                        child: Container(
-                          height: 60,
-                          width: 220,
-                          decoration: const BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Color.fromARGB(255, 10, 86, 12),
-                                  Colors.white,
-                                ],
+                                builder: (context) => const MyHomePage(),
                               ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.white,
-                                  spreadRadius: 4,
-                                  blurRadius: 16,
-                                  offset: Offset(-10, 0),
-                                )
-                              ]),
-                          child: const Center(
-                            child: Text(
-                              "GET STARTED",
-                              style: TextStyle(
-                                decoration: TextDecoration.none,
-                                fontSize: 25,
+                            );
+                          },
+                          child: const Text(
+                            "NEXT",
+                            style: TextStyle(
+                                fontSize: 20,
                                 color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
+                                fontWeight: FontWeight.normal),
                           ),
                         ),
                       ),
