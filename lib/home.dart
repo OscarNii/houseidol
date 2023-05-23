@@ -298,7 +298,7 @@ class MyHomePage extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding: EdgeInsets.only(
-                                              top: 300.0, left: 10),
+                                              top: 320.0, left: 10),
                                           child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
@@ -335,6 +335,7 @@ class MyHomePage extends StatelessWidget {
                                                   CircleAvatar(
                                                     backgroundColor:
                                                         Colors.white,
+                                                    radius: 15,
                                                     child: Icon(
                                                       Icons.bed,
                                                       color: Colors.black,
@@ -350,8 +351,25 @@ class MyHomePage extends StatelessWidget {
                                                   CircleAvatar(
                                                     backgroundColor:
                                                         Colors.white,
+                                                    radius: 15,
                                                     child: Icon(
-                                                      Icons.bed,
+                                                      Icons.bathtub_outlined,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                  SizedBox(width: 10),
+                                                  Text(
+                                                    "4 Beds",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.white,
+                                                    radius: 15,
+                                                    child: Icon(
+                                                      Icons.landslide,
                                                       color: Colors.black,
                                                     ),
                                                   ),
@@ -375,19 +393,133 @@ class MyHomePage extends StatelessWidget {
                             ),
                             SizedBox(width: 15),
                             Padding(
-                              padding: const EdgeInsets.only(top: 58.0),
-                              child: Container(
-                                height: 420,
-                                width: 300,
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                  borderRadius: BorderRadius.circular(25),
-                                  image: const DecorationImage(
-                                    image: AssetImage(
-                                        "assets/housepageview3.jpeg"),
-                                    fit: BoxFit.cover,
+                              padding:
+                                  const EdgeInsets.only(top: 58.0, left: 20),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    height: 420,
+                                    width: 300,
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(35),
+                                      image: const DecorationImage(
+                                        image: AssetImage(
+                                            "assets/housepageview3.jpeg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    child: Stack(
+                                      children: const [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.end,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsets.all(8.0),
+                                              child: CircleAvatar(
+                                                backgroundColor: Colors.white,
+                                                child: Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.black,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        Padding(
+                                          padding: EdgeInsets.only(
+                                              top: 320.0, left: 10),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Text(
+                                                    "\$26.57k",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 20,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
+                                                  ),
+                                                  SizedBox(width: 10),
+                                                  Icon(
+                                                    Icons.favorite,
+                                                    color: Colors.yellow,
+                                                  )
+                                                ],
+                                              ),
+                                              Text(
+                                                "59 Green Bank, London.",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 15,
+                                                ),
+                                              ),
+                                              SizedBox(height: 10),
+                                              Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.white,
+                                                    radius: 15,
+                                                    child: Icon(
+                                                      Icons.bed,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                  SizedBox(width: 10),
+                                                  Text(
+                                                    "4 Beds",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.white,
+                                                    radius: 15,
+                                                    child: Icon(
+                                                      Icons.bathtub_outlined,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                  SizedBox(width: 10),
+                                                  Text(
+                                                    "4 Beds",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  CircleAvatar(
+                                                    backgroundColor:
+                                                        Colors.white,
+                                                    radius: 15,
+                                                    child: Icon(
+                                                      Icons.landslide,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                  SizedBox(width: 10),
+                                                  Text(
+                                                    "4 Beds",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
+                                ],
                               ),
                             ),
                           ],
