@@ -789,7 +789,8 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: 20),
               ],
             ),
           )

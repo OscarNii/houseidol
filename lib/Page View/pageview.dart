@@ -32,31 +32,34 @@ class PageView1 extends StatelessWidget {
                 ),
               ),
             ),
-            const Positioned(
-              bottom: 230,
-              right: 10,
-              child: Text(
-                "Find The Best Place ",
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  color: Colors.white,
-                  fontSize: 50,
-                  fontWeight: FontWeight.normal,
-                  fontFamily: 'Lobster',
+            const Padding(
+              padding: EdgeInsets.only(top: 380.0),
+              child: Center(
+                child: Text(
+                  "Find The Best Place ",
+                  style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 50,
+                    fontWeight: FontWeight.normal,
+                    fontFamily: 'Lobster',
+                  ),
                 ),
               ),
             ),
-            const Positioned(
-              bottom: 180,
-              right: 60,
-              child: Text(
-                "For Rent Good Price ",
-                style: TextStyle(
+            const Padding(
+              padding: EdgeInsets.only(top: 520.0),
+              child: Center(
+                child: Text(
+                  "For Rent Good Price ",
+                  style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
                     fontFamily: 'Lobster',
                     fontSize: 36,
-                    fontWeight: FontWeight.normal),
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
               ),
             ),
             Positioned(
@@ -125,31 +128,33 @@ class PageView1 extends StatelessWidget {
                 ),
               ),
             ),
-            const Positioned(
-              bottom: 230,
-              right: 10,
-              child: Text(
-                "Find The Best Place ",
-                style: TextStyle(
-                  decoration: TextDecoration.none,
-                  color: Colors.white,
-                  fontSize: 50,
-                  fontWeight: FontWeight.normal,
-                  fontFamily: 'Lobster',
+            const Padding(
+              padding: EdgeInsets.only(top: 380.0),
+              child: Center(
+                child: Text(
+                  "We Got The Best Location",
+                  style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 42,
+                    fontWeight: FontWeight.normal,
+                    fontFamily: 'Lobster',
+                  ),
                 ),
               ),
             ),
-            const Positioned(
-              bottom: 180,
-              right: 60,
-              child: Text(
-                "For Rent Good Price ",
-                style: TextStyle(
-                    decoration: TextDecoration.none,
-                    color: Colors.white,
-                    fontFamily: 'Lobster',
-                    fontSize: 36,
-                    fontWeight: FontWeight.normal),
+            const Padding(
+              padding: EdgeInsets.only(top: 520.0),
+              child: Center(
+                child: Text(
+                  "For Rent Good Price ",
+                  style: TextStyle(
+                      decoration: TextDecoration.none,
+                      color: Colors.white,
+                      fontFamily: 'Lobster',
+                      fontSize: 30,
+                      fontWeight: FontWeight.normal),
+                ),
               ),
             ),
             Positioned(
