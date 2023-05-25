@@ -62,9 +62,9 @@ class PageView1 extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-                bottom: 50,
-                right: 109,
+            Padding(
+              padding: const EdgeInsets.only(top: 650.0),
+              child: Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
@@ -103,7 +103,9 @@ class PageView1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                )),
+                ),
+              ),
+            ),
           ],
         ),
         Stack(
@@ -157,9 +159,9 @@ class PageView1 extends StatelessWidget {
                 ),
               ),
             ),
-            Positioned(
-                bottom: 50,
-                right: 109,
+            Padding(
+              padding: const EdgeInsets.only(top: 650.0),
+              child: Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(25),
                   child: BackdropFilter(
@@ -198,7 +200,9 @@ class PageView1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                )),
+                ),
+              ),
+            ),
           ],
         ),
       ],
